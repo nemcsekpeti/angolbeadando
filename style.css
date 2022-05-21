@@ -1,0 +1,145 @@
+body 
+{
+    background-color: rgb(240, 240, 240);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 
+    '1fr 1fr 1fr'
+    'jatek jatek jatek'
+    '3fr';
+}
+
+canvas 
+{
+    margin-left: auto;
+    margin-right: auto;
+    cursor: none;
+    grid-area: "jatek";
+    margin-top: 10%;
+    border:7px dashed rgb(177, 177, 177) 
+}
+
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar {
+      grid-area: "menu";
+    overflow: hidden;
+    background-color: rgb(177, 177, 177); 
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(100, 100, 100);
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(100, 100, 100);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: rgb(177, 177, 177);
+    color: white;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+  .rightnav
+  {
+      text-align: right;
+      float: right;
+  }
+
+  p
+{
+    padding-top: 8%;
+}
+
+.masiklayout
+{
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 
+    '1fr 1fr 1fr'
+    '1fr 1fr jatek'
+    'menu menu menu';   
+}
+
+.masiklayout canvas
+{
+    margin-left: 60%;
+    cursor: none;
+    position:sticky;
+    grid-area: "jatek";
+    margin-top: 10%;
+    border:7px dashed white; 
+}
+
+.layout
+{
+    background-color: green;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 
+    '1fr 1fr 1fr'
+    '1fr 1fr jatek'
+    'menu menu menu';   
+}
+
+.layout canvas
+{
+    margin-right: 60%;
+    margin-top: 10%;
+    cursor: none;
+    position:sticky;
+    grid-area: "jatek";
+    margin-top: 10%;
+    border:7px dashed greenyellow; 
+}
